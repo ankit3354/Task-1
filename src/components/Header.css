@@ -1,0 +1,161 @@
+.header-contaioner {
+  position: inherit;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: -webkit-fill-available;
+  z-index: 2;
+}
+
+.header-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10px;
+  gap: 60px;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 60px;
+  font-weight: 400;
+  font-family: "Saiba", sans-serif;
+}
+
+.heading h3 {
+  font-weight: 400;
+}
+
+.serach-box {
+  cursor: pointer;
+  background-color: transparent;
+  width: 555px;
+  border-radius: 73.37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  border: 0.73px solid rgba(255, 255, 255, 0.582);
+  padding: 8px 11px;
+}
+
+.serach-box .search-icon {
+  color: rgba(255, 255, 255, 1);
+  opacity: 50%;
+  font-size: 32px;
+}
+
+.serach-box input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  opacity: 50%;
+  font-size: 32px;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.filter-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.back-btn h3 {
+  padding-right: 63rem;
+  font-size: 24px;
+  color: rgba(223, 148, 56, 1);
+  cursor: pointer;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+.filter-icon button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(44, 47, 117, 1);
+  border-radius: 87px;
+  padding: 11px 18px;
+  background-color: rgba(44, 47, 117, 1);
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.filter-icon button:nth-child(2) {
+  background-color: rgba(0, 74, 21, 1);
+  color: white;
+  border: 1px solid #ffffffec;
+}
+
+@media screen and (max-width: 1000px) {
+  .back-btn {
+    text-align: left;
+    padding-left: 4px;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .serach-box {
+    width: 100vw;
+    padding: 8px 11px;
+  }
+  .serach-box .search-icon {
+    font-size: 28px;
+  }
+  .serach-box input {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heading h1 {
+    font-size: 28px;
+  }
+  .serach-box {
+    padding: 8px 11px;
+  }
+
+  .serach-box input {
+    font-size: 18px;
+  }
+
+  .serach-box .search-icon {
+    font-size: 18px;
+  }
+
+  .filter-icon button {
+    font-size: 17px;
+    padding: 8px 12px;
+  }
+
+  .heading h3 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .back-btn {
+    font-size: 16px;
+  }
+
+  .heading h3 {
+    font-size: 12px;
+  }
+}

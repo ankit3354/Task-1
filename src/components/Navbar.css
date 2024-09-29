@@ -1,0 +1,208 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  gap: 38px;
+  height: 12rem;
+  padding-right: 40px;
+  position: inherit;
+  z-index: 2;
+}
+
+.ul-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.ul-list li {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#active {
+  text-decoration: underline;
+  color: #de9538;
+  text-decoration-thickness: 1.1px;
+}
+
+.nav-user-wrapper {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid #de9538;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  color: #de9538;
+  height: 60px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 3px solid #de9538;
+  background-color: #de9538;
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+  height: 60px;
+  width: 160px;
+  cursor: pointer;
+}
+
+.user-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.users-icon-wrapper {
+  border: 6px solid #de9538;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  position: relative;
+}
+
+.one-circle {
+  position: absolute;
+  border: 6px solid #de9538;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  top: 7px;
+  left: 15px;
+}
+
+.half-circle {
+  position: absolute;
+  border: 6px solid #de9538;
+  border-radius: 50%;
+  border-bottom: 0;
+  border-top-left-radius: 110px;
+  border-top-right-radius: 110px;
+  width: 41px;
+  height: 21px;
+  top: 31px;
+  left: 8px;
+}
+
+.nav-toggle {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  padding-right: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .login-btn {
+    width: 140px;
+    height: 50px;
+  }
+  .signup-btn {
+    width: 140px;
+    height: 50px;
+  }
+  .navbar {
+    padding-left: 128px;
+    gap: 35px;
+  }
+  .users-icon-wrapper {
+    width: 55px;
+    height: 55px;
+  }
+  .one-circle {
+    border: 5px solid #de9538;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    left: 13px;
+  }
+  .half-circle {
+    border-top-left-radius: 97px;
+    border-top-right-radius: 110px;
+    width: 34px;
+    height: 18px;
+    top: 25px;
+    left: 7px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .login-btn {
+    width: 120px;
+    height: 40px;
+  }
+  .signup-btn {
+    width: 120px;
+    height: 40px;
+  }
+  .navbar {
+    padding-left: 54px;
+    gap: 33px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav-toggle {
+    display: flex;
+  }
+
+  .ul-list {
+    display: none;
+  }
+
+  .navbar {
+    gap: 18px;
+    padding-right: 38px;
+    justify-content: end;
+  }
+
+  .ul-list li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .nav-user-wrapper {
+    justify-content: flex-start;
+  }
+  .navbar {
+    height: 200px;
+    padding: 4px 0;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-btn {
+    width: 100px;
+    height: 30px;
+  }
+  .signup-btn {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+}
